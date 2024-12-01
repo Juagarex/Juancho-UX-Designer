@@ -1,5 +1,6 @@
 *{
     font-family:'Epilogue';
+    color: #2d2d2d;
 }
 
 
@@ -20,7 +21,7 @@ align-items: center;
     width: 100%;
     height: 100px;
     background: rgba(255, 255, 255, 1);
-    margin: 40px;
+    margin-top: 40px;
 
 
 }
@@ -50,49 +51,91 @@ line-height: 25.31px;
 
 .hero{
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     width: 100%;
-    height: fit-content;
-    margin: 64px;
-   justify-content: center;
-   flex-direction: column;
+    margin: 80px;
+   justify-items: center;
    align-items: center;
-
 }
 
-.Juan{
-    width: auto;
-    height: 250px;
-}
-
-
-.name {
-    position: absolute;
-    top:50px;
-    right: 150px; 
-    font-size: 80px;
-    color: aquamarine;
-}
-.age {
-    position: absolute;
-    top:180px;
-    left: 150px; 
-    font-size: 50px;
-    color: aquamarine;
-}
-.city {
-    position: absolute;
-    top:200px;
-    right: 50px; 
-    font-size: 40px;
-    color: aquamarine;
-}
 
 .Presentiacion{
     font-size: 25px;
-width: 500px;
-height: auto;
+    grid-column: span 2/ span 2;
+    grid-column-start: 2;
+    height: auto;
 }
+
+.Presentiacion h3 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.Presentiacion h1 {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.Presentiacion p  {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.container_img{
+    width: 330px;
+    height: 384px;
+    display: grid ;
+    grid-column:  span 2/ span 2;
+    grid-column-start: 4;
+    position: relative;
+}
+  .v46_34 {
+    position: absolute;
+    width: 243px;
+    height: 329px;
+    background: rgba(9,199,187,1);
+    border-top-left-radius: 187px;
+    border-top-right-radius: 187px;
+    overflow: hidden;
+  }
+  .v46_35 {
+    width: 75px;
+    height: 75px;
+    background: rgba(229, 45, 198, 1);
+    opacity: 1;
+    position: absolute;
+    top: 309px;
+    left:-40px;
+
+  }
+  .v46_36 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background: rgba(255,98,80,1);
+    top: 1px;
+    left: 225px;
+    overflow: hidden;
+  }
+  .v46_37 {
+    position: absolute;
+    width: 234px;
+    height: 351px;
+    background: url("../Assets/img/Juan.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    bottom: 55px;
+    left: 5px;
+
+  }
+
+
+
 
 /*  redes */
 
