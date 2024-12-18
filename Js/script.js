@@ -123,12 +123,8 @@ const proyectos =[
  //Seleccion del contenedor donde se mostraran las tarjetas de la galeria
 
  const contenedorGaleria = document.getElementById("gallery-container");
-
- //Funcion para cargar y mostrar las tarjetas de la galeria
-
- function mostrarTarjetas() {
-    galeria.forEach((galeria, index)=>{
-        // Crear el titulo principal del contenedor 
+        
+    // Crear el titulo principal del contenedor 
         const cardContTitle=document.createElement("div");
         cardContTitle.classList.add("cont-title");
 
@@ -137,6 +133,11 @@ const proyectos =[
 
         cardContTitle.appendChild(cardTitle);
  
+ //Funcion para cargar y mostrar las tarjetas de la galeria
+
+ function mostrarTarjetas() {
+    galeria.forEach((galeria, index)=>{
+
         //crear un contenedor para cada una de las tarjetas
         const cardGallery=document.createElement("div");
         cardGallery.classList.add("card-gallery");
@@ -169,6 +170,7 @@ const proyectos =[
 
         //agregar tarjeta al contenedor principal
 
+        contenedorGaleria.appendChild(cardContTitle);
         contenedorGaleria.appendChild(cardGallery);
      });
     

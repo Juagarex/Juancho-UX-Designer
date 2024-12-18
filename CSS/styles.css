@@ -279,8 +279,15 @@ line-height: 25.31px;
     height: 960px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     row-gap: 24px;
     justify-items: center;
+}
+
+.cont-title {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column: span 3;
 }
 
 .card-gallery h3{
