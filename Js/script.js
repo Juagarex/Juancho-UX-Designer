@@ -23,6 +23,76 @@ const proyectos =[
 // aqui puedes agregar mas proyectos
  ];
 
+
+
+ 
+
+
+
+
+ 
+ //skills
+
+ //array skills
+const skills = [
+    {
+        nombre: "Product Desing",
+        descripcion: "Construir la narrativa en forma y función que supla las necesidades de usuarios sin olvidar los objetivos de negocio.",
+        imagen: "./Assets/img/skills/Card1.png"
+    },
+    {
+        nombre: "UX Research",
+        descripcion: "Recolectar, categorizar y analizar los contextos de los usuarios para verdaderamente definir las necesidades de los usuarios.",
+        imagen: "./Assets/img/skills/Card2.png"
+    },
+    {
+        nombre: "UX Designer",
+        descripcion: "Direct creative visions into a symphony of design elements, harmonizing visuals to tell powerful stories and make a lasting impression.",
+        imagen: "./Assets/img/skills/Card3.png"
+    }
+];
+
+
+
+
+// contenedor de skills
+const contenedorSkills = document.querySelector('.skills-cards');
+
+// Mostrar
+function mostrarSkills() {
+    skills.forEach(skill => {
+        const card = document.createElement("div");
+        card.classList.add("skill-card");
+
+        const img = document.createElement("img");
+        img.src = skill.imagen;
+        img.alt = skill.nombre;
+        img.classList.add("skill-image");
+
+        const h2 = document.createElement("h2");
+        h2.classList.add("skill-name");
+        h2.textContent = skill.nombre;
+
+        const p = document.createElement("p");
+        p.classList.add("skill-description");
+        p.textContent = skill.descripcion;
+
+        card.appendChild(img);
+        card.appendChild(h2);
+        card.appendChild(p);
+        contenedorSkills.appendChild(card);
+    });
+}
+
+// Llamado a la función para mostrar skills
+mostrarSkills();
+
+
+
+
+
+
+
  //Seleccion del contenedor dnde se mostraran los proyectos
 
  const contenedorPortafolio = document.getElementById("porfolio-container");
